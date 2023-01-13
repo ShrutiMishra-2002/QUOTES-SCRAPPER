@@ -11,6 +11,34 @@ from streamlit_lottie import st_lottie
 from streamlit_option_menu import option_menu
 import streamlit.components.v1 as components
 
+page="""
+<style>
+[data-testid="stAppViewContainer"]{
+background-image: url("https://img.freepik.com/free-vector/hand-painted-watercolor-background-pink-with-sky-clouds-shape_41066-2077.jpg?w=2000");
+
+background-size: cover;
+}
+
+[data-testid="stHeader"]{
+background-color: rgba(0,0,0,0);
+}
+
+[data-testid="stToolbar"]{
+right: 2rem;
+
+}
+
+[data-testid="stMarkdown"]{
+color: rgba(255,255,255,0);
+}
+
+
+[data-testid="stSidebar"]> div:first-child{
+
+}
+</style>
+"""
+st.markdown(page, unsafe_allow_html=True)
 # components.html(
     
 # )

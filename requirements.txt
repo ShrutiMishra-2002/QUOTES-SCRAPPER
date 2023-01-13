@@ -1,0 +1,12 @@
+operator 
+pickle 
+ssl 
+tkinter 
+streamlit 
+json
+pandas 
+requests
+bs4 
+streamlit_lottie
+streamlit_option_menu 
+streamlit.components.v1 
