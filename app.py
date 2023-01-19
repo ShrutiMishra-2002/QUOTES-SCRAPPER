@@ -14,7 +14,7 @@ import streamlit.components.v1 as components
 page="""
 <style>
 [data-testid="stAppViewContainer"]{
-background-image: url("https://img.freepik.com/free-vector/hand-painted-watercolor-background-pink-with-sky-clouds-shape_41066-2077.jpg?w=2000");
+background-image: url("https://images.hdqwalls.com/wallpapers/better-without-you-jl.jpg");
 
 background-size: cover;
 }
@@ -73,37 +73,37 @@ st.markdown("<h1 style='text-align: center; color: white;'>QUOTES SCRAPPER 💬<
 st.markdown("---")
 # st.markdown("<h1 style='text-align:center;'>Quotes Scrapper</h1>", unsafe_allow_html=TRUE)
 # lottie animation
-def load_lottiefile(filepath: str):
-    with open(filepath, "r") as f:
-        return json.load(f)
+# def load_lottiefile(filepath: str):
+#     with open(filepath, "r") as f:
+#         return json.load(f)
 
 
-def load_lottieurl(url: str):
-    r = requests.get(url)
-    if r.status_code != 200:
-        return None
-    return r.json()
+# def load_lottieurl(url: str):
+#     r = requests.get(url)
+#     if r.status_code != 200:
+#         return None
+#     return r.json()
 
 
 
-# lottie animation 
+# # lottie animation 
 
-lottie_coding = load_lottiefile("read.json")  # replace link to local lottie file
-# lottie_hello = load_lottieurl("https://assets4.lottiefiles.com/packages/lf20_0c8439m5.json")
-lottie_hello=load_lottiefile("read.json")
+# lottie_coding = load_lottiefile("read.json")  # replace link to local lottie file
+# # lottie_hello = load_lottieurl("https://assets4.lottiefiles.com/packages/lf20_0c8439m5.json")
+# lottie_hello=load_lottiefile("read.json")
 
-st_lottie(
-    lottie_hello,
-    speed=1.5,
-    reverse=False,
-    loop=True,
-    quality="low", # medium ; high
-    # renderer="svg", # canvas
-    height=None,
-    # height=400,
-    width=None,
-    key=None,
-)
+# st_lottie(
+#     lottie_hello,
+#     speed=1.5,
+#     reverse=False,
+#     loop=True,
+#     quality="low", # medium ; high
+#     # renderer="svg", # canvas
+#     height=None,
+#     # height=400,
+#     width=None,
+#     key=None,
+# )
 
 # main content
 
